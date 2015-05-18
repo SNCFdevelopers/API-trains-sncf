@@ -8,11 +8,12 @@ Overview
 This document describes how to use the SNCF API based on navitia via the v1 interface, and the returned resources.
 Navitia is an Open Source software developed by Canal TP. (www.canaltp.fr)
 
-The SNCF API handle to :
+The SNCF API handles:
 
-* compute journey from and to "station" or "administrative region"
-* display next departures or arrivals
-* display route schedules
+* journeys from and to "station" or "administrative region"
+* next departures or arrivals
+* route schedules
+* stop schedules
 * lexicographical search (autocomplete)
 
 The SNCF API contains theorical train data for the following commercial modes : TGV, TER, Transilien, Intercités.
@@ -24,10 +25,12 @@ Authentication
 
 You must authenticate to use **SNCF API**. When you register we give you an authentication key to the API.
 
-There is two ways for authentication:
+There is two ways to authenticate:
 
 You can use a `Basic HTTP authentication`_, where the username is the key, and without password.
+
 Username : copy / paste your key
+
 Password : leave the field blank
 
 
@@ -452,7 +455,7 @@ To access the 'journey' api endpoint: `<https://api.navitia.io/v1/journeys?from=
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | *Note*                                                                                                                                                      |
 |                                                                                                                                                             |
-| The API SNCF handle computation journey from and to "station" or "administrative region"                                                                    |
+| The SNCF API handle journey computation from and to "station" or "administrative region"                                                                    |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
