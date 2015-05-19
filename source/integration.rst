@@ -52,24 +52,18 @@ Some easy examples
 ******************
 
 * Transport mode available in the service
-	* http://api.sncf.com/v1/coverage/sncf/
+	* http://api.sncf.com/v1/coverage/sncf/commercial_modes
 * Which services are available on this coverage? take a look at the links under this URL
-	* https://api.navitia.io/v1/coverage/fr-idf
+	* https://api.sncf.com/v1/coverage/sncf
 * Networks available?
-	* https://api.navitia.io/v1/coverage/fr-idf/networks
+	* https://api.sncf.com/v1/coverage/sncf/networks
 * SNCF network lines?
-	* https://api.navitia.io/v1/coverage/fr-idf/networks/network:RTP/lines 
+	* https://api.sncf.com/v1/coverage/sncf/networks/network:OCE:SN/lines
 * Too much lines, let's use physical mode filtering
-	* physical modes managed by RATP 
-		* https://api.navitia.io/v1/coverage/fr-idf/networks/network:RTP/physical_modes
-	* metro lines 
-		* https://api.navitia.io/v1/coverage/fr-idf/networks/network:RTP/physical_modes/physical_mode:Metro/lines 
-* By the way, what is close to me?
-	* https://api.navitia.io/v1/coverage/fr-idf/coords/2.377310;48.847002/places_nearby
-	* or https://api.navitia.io/v1/coverage/fr-idf/coords/2.377310;48.847002/stop_points
-	* or https://api.navitia.io/v1/coverage/fr-idf/coords/2.377310;48.847002/lines
-	* or https://api.navitia.io/v1/coverage/fr-idf/coords/2.377310;48.847002/stop_schedules
-	* or ...
+	* physical modes managed by SNCF
+	* https://api.sncf.com/v1/coverage/sncf/networks/network:OCE:SN/physical_modes
+	* Train lines
+	* https://api.sncf.com/v1/coverage/sncf/networks/network:OCE:SN/physical_modes/physical_mode:Train/lines
 
 Resources
 *********
@@ -173,22 +167,22 @@ count           int  Number of items per page
 Templated url
 *************
 
-Under some link sections, you will find a "templated" property. If "templated" is true, 
-then you will have to format the link with one id. 
+Under some link sections, you will find a "templated" property. If "templated" is true,
+then you will have to format the link with one id.
 
-For example, in response of https://api.navitia.io/v1/coverage/fr-idf/lines 
+For example, in response of https://api.sncf.com/v1/coverage/sncf/lines
 you will find a *links* section:
 
 .. code-block:: json
 
 	{
-		"href": "https://api.navitia.io/v1/coverage/fr-idf/lines/{lines.id}/stop_schedules",
+		"href": "https://api.sncf.com/v1/coverage/sncf/lines/{lines.id}/stop_schedules",
 		"rel": "route_schedules",
 		"templated": true
 	}
 
 You have to put one line id instead of "{lines.id}". For example:
-https://api.navitia.io/v1/coverage/fr-idf/networks/network:RTP/lines/line:RTP:1197611/stop_schedules
+https://api.sncf.com/v1/coverage/sncf/lines/line:OCE:TrainTER-87296012-87271007/stop_schedules
 
 Inner references
 ****************
@@ -285,7 +279,7 @@ Collections
 
 Examples
 
-Response example for this request https://api.navitia.io/v1/coverage/fr-idf/physical_modes
+Response example for this request https://api.sncf.com/v1/coverage/sncf/physical_modes
 
 .. code-block:: json
 
@@ -312,13 +306,13 @@ Response example for this request https://api.navitia.io/v1/coverage/fr-idf/phys
 Other examples
 
 * Network list
-	* https://api.navitia.io/v1/coverage/fr-idf/networks
+	* https://api.sncf.com/v1/coverage/sncf/networks
 * Physical mode list
-	* https://api.navitia.io/v1/coverage/fr-idf/physical_modes
+	* https://api.sncf.com/v1/coverage/sncf/physical_modes
 * Line list
-	* https://api.navitia.io/v1/coverage/fr-idf/lines
+	* https://api.sncf.com/v1/coverage/sncf/lines
 * Line list for one mode
-	* https://api.navitia.io/v1/coverage/fr-idf/physical_modes/physical_mode:Metro/lines
+	* https://api.sncf.com/v1/coverage/sncf/physical_modes/physical_mode:Train/lines
 
 
 .. _places:
@@ -359,7 +353,7 @@ Parameters
 Example
 #######
 
-Response example for : https://api.navitia.io/v1/coverage/fr-idf/places?q=rue
+Response example for : https://api.sncf.com/v1/coverage/sncf/places?q=gare
 
 .. code-block:: json
 
@@ -416,27 +410,44 @@ Example
 ########
 
 Response example for this request
-https://api.navitia.io/v1/coverage/fr-idf/stop_areas/stop_area:TRN:SA:DUA8754575/places_nearby
+https://api.sncf.com/v1/coverage/sncf/stop_areas/stop_area:OCE:SA:87271007/places_nearby
 
 .. code-block:: json
 
     {
     "places_nearby": [
-        {
-            "embedded_type": "stop_area",
-            "stop_area": {
-                "comment": "",
-                "name": "CHATEAUDUN",
-                "coord": {
-                    "lat": "48.073402",
-                    "lon": "1.338426"
-                },
-                "id": "stop_area:TRN:SA:DUA8754575"
+    {
+        "embedded_type": "stop_point",
+        "stop_point": {
+            "comment": "",
+            "name": "gare de Gare-du-Nord",
+            "links": [ ],
+            "coord": {
+                "lat": "48.880195",
+                "lon": "2.354892"
+
             },
-            "distance": "0.0",
-            "quality": 0,
-            "id": "stop_area:TRN:SA:DUA8754575",
-            "name": "CHATEAUDUN"
+            "label": "gare de Gare-du-Nord (Paris)",
+            "equipments": [ ],
+            "administrative_regions": [
+            {
+                "insee": "75056",
+                "name": "Paris",
+                "level": 8,
+                "coord":{
+                    "lat": "48.856506",
+                    "lon": "2.352133"
+                },
+                "label": "Paris (75001-75116)",
+                "id": "admin:7444extern",
+                "zip_code": "75001-75116"
+            }
+        ],
+        "id": "stop_point:OCE:SP:RERB-87271023",
+        "name": "gare de Gare-du-Nord (Paris)",
+        "distance": "6.0",
+        "quality": 0,
+        "id": "stop_point:OCE:SP:RERB-87271023"
         },
         ....
     }
@@ -447,10 +458,10 @@ Journeys
 
 This api compute journeys.
 
-It will retrieve the next journeys from 
+It will retrieve the next journeys from
 the selected public transport object.
 
-To access the 'journey' api endpoint: `<https://api.navitia.io/v1/journeys?from={resource_id_1}&to={resource_id_2}&datetime={datetime}>`_ .
+To access the 'journey' api endpoint: `<https://api.sncf.com/v1/journeys?from={resource_id_1}&to={resource_id_2}&datetime={datetime}>`_ .
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | *Note*                                                                                                                                                      |
@@ -609,7 +620,7 @@ Route Schedules
 
 This api give you access to schedules of routes.
 The response is made of an array of route_schedule, and another one of `note`_.
-You can access it via that kind of url: `<https://api.navitia.io/v1/{a_path_to_a_resource}/route_schedules>`_
+You can access it via that kind of url: `<https://api.sncf.com/v1/{a_path_to_a_resource}/route_schedules>`_
 
 Parameters
 ##########
@@ -688,7 +699,7 @@ Stop Schedules
 
 This api give you access to schedules of stops.
 The response is made of an array of stop_schedule, and another one of `note`_.
-You can access it via that kind of url: `<https://api.navitia.io/v1/{a_path_to_a_resource}/stop_schedules>`_
+You can access it via that kind of url: `<https://api.sncf.com/v1/{a_path_to_a_resource}/stop_schedules>`_
 
 Parameters
 ##########
