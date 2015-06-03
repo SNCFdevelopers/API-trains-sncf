@@ -545,7 +545,7 @@ Field               Type               Description
 =================== ================== ===========================================================================
 _duration            int                Duration of the journey
 nb_transfers        int                 Number of transfers in the journey
-departure_date_time `datetime`_       Departure date and time of the journey
+departure_date_time `datetime`_         Departure date and time of the journey
 requested_date_time `datetime`_         Requested date and time of the journey
 arrival_date_time   `datetime`_         Arrival date and time of the journey
 sections            array `section`_    All the sections of the journey
