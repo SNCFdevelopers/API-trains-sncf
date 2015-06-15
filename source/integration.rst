@@ -52,7 +52,7 @@ Some easy examples
 ******************
 
 * Transport mode available in the service
-	* http://api.sncf.com/v1/coverage/sncf/commercial_modes
+	* https://api.sncf.com/v1/coverage/sncf/commercial_modes
 * Which services are available on this coverage? take a look at the links under this URL
 	* https://api.sncf.com/v1/coverage/sncf
 * Networks available?
