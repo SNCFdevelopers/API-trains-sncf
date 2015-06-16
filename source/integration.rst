@@ -73,63 +73,63 @@ All the resources return a response containing a links object, a paging object, 
 * **Coverage** :
 
 +---------------------------------------------------------------+--------------------------------------+
-| ``get`` /coverage                                             | List of the areas covered by SNCF API|
+| ``GET`` /coverage                                             | List of the areas covered by SNCF API|
 +---------------------------------------------------------------+--------------------------------------+
-| ``get`` /coverage/*region_id*                                 | Information about a specific region  |
+| ``GET`` /coverage/*region_id*                                 | Information about a specific region  |
 +---------------------------------------------------------------+--------------------------------------+ 
 
 * **Public transportation objects** : List of the public transport objects of a region
 
 +---------------------------------------------------------------+-------------------------------------+
-| ``get`` /coverage/*region_id*/*collection_name*               | Collection of objects of a region   |
+| ``GET`` /coverage/*region_id*/*collection_name*               | Collection of objects of a region   |
 +---------------------------------------------------------------+-------------------------------------+
-| ``get`` /coverage/*region_id*/*collection_name*/*object_id*   | Information about a specific region |
+| ``GET`` /coverage/*region_id*/*collection_name*/*object_id*   | Information about a specific region |
 +---------------------------------------------------------------+-------------------------------------+
 
 * **Journeys** : Compute journeys
 
 +---------------------------------------------------------------+-------------------------------------+
-| ``get`` /coverage/*resource_path*/journeys                    | List of journeys                    |
+| ``GET`` /coverage/*resource_path*/journeys                    | List of journeys                    |
 +---------------------------------------------------------------+-------------------------------------+
-| ``get`` /journeys                                             | List of journeys                    |
+| ``GET`` /journeys                                             | List of journeys                    |
 +---------------------------------------------------------------+-------------------------------------+
 
 * **Route Schedules** : Compute route schedules for a given resource
 
 +---------------------------------------------------------------+-------------------------------------+
-| ``get`` /coverage/*resource_path*/route_schedules             | List of the route schedules         |
+| ``GET`` /coverage/*resource_path*/route_schedules             | List of the route schedules         |
 +---------------------------------------------------------------+-------------------------------------+
 
 * **Stop Schedules** : Compute stop schedules for a given resource
 
 +---------------------------------------------------------------+-------------------------------------+
-| ``get`` /coverage/*resource_path*/stop_schedules              | List of the stop schedules          |
+| ``GET`` /coverage/*resource_path*/stop_schedules              | List of the stop schedules          |
 +---------------------------------------------------------------+-------------------------------------+
 
 * **Departures** : List of the next departures for a given resource
 
 +---------------------------------------------------------------+-------------------------------------+
-| ``get`` /coverage/*resource_path*/departures                  | List of the departures              |
+| ``GET`` /coverage/*resource_path*/departures                  | List of the departures              |
 +---------------------------------------------------------------+-------------------------------------+
 
 * **Arrivals** : List of the next departures for a given resource
 
 +---------------------------------------------------------------+-------------------------------------+
-| ``get`` /coverage/*resource_path*/arrivals                    | List of the arrivals                |
+| ``GET`` /coverage/*resource_path*/arrivals                    | List of the arrivals                |
 +---------------------------------------------------------------+-------------------------------------+
 
 * **Places/Autocomplete** : Search in the datas
 
 +---------------------------------------------------------------+-------------------------------------+
-| ``get`` /coverage/places                                      | List of objects                     |
+| ``GET`` /coverage/places                                      | List of objects                     |
 +---------------------------------------------------------------+-------------------------------------+
 
 * **Places nearby** : List of objects near an object or a coord
 
 +---------------------------------------------------------------+-------------------------------------+
-| ``get`` /coverage/*resource_path*/places_nearby               | List of objects near the resource   |
+| ``GET`` /coverage/*resource_path*/places_nearby               | List of objects near the resource   |
 +---------------------------------------------------------------+-------------------------------------+
-| ``get`` /coverage/*lon;lat*/places_nearby                     | List of objects near the resource   |
+| ``GET`` /coverage/*lon;lat*/places_nearby                     | List of objects near the resource   |
 +---------------------------------------------------------------+-------------------------------------+
 
 Interface
