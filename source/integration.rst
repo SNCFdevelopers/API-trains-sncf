@@ -139,6 +139,7 @@ We aim to implement `HATEOAS <http://en.wikipedia.org/wiki/HATEOAS>`_ concept wi
 Each response contains a linkable object and lots of links.
 Links allow you to know all accessible uris and services for a given point.
 
+.. _paging:
 Paging
 ======
 
@@ -259,11 +260,7 @@ Apis
 Public transportation objects
 ******************************
 
-You can explore the public transportation objects 
-easily with these apis. You just need to add at the end of your url 
-a collection name to see all the objects of a particular collection.
-To see an object add the id of this object at the end of the collection's url.
-The only arguments are the ones of `paging`_.
+You can explore the public transportation objects easily with these apis. You just need to add at the end of your url a collection name to see all the objects of a particular collection. To see an object add the id of this object at the end of the collection's url. The only arguments are the ones of `paging`_.
 
 Collections
 ###########
