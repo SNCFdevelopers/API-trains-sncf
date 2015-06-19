@@ -510,7 +510,7 @@ Parameters
 |          |                       |           |                                           |                 |
 |          |                       |           | More in `multiple_journeys`_              |                 |
 +----------+-----------------------+-----------+-------------------------------------------+-----------------+
-| nop      | max_nb_tranfers       | int       | Maximum of number transfers               | 10              |
+| nop      | max_nb_transfers       | int       | Maximum of number transfers               | 10              |
 +----------+-----------------------+-----------+-------------------------------------------+-----------------+
 | nop      | max_duration          | int       | Maximum duration of the journey           | 3600*24 s (24h) |
 |          |                       |           |                                           |                 |
