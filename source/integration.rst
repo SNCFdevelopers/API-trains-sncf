@@ -25,23 +25,15 @@ Authentication
 
 You must authenticate to use **SNCF API**. When you register we give you an authentication key to the API.
 
-There is two ways to authenticate:
 
-You can use a `Basic HTTP authentication`_, where the username is the key, and without password.
+You must use the `Basic HTTP authentication`_, where the username is the key, and without password.
 
 Username : copy / paste your key
 
 Password : leave the field blank
 
 
-The other method is to pass directly the key in the `HTTP Authorization header`_ like that:
-
-.. code-block:: none
-
-    Authorization: mysecretkey
-
 .. _Basic HTTP authentication: http://tools.ietf.org/html/rfc2617#section-2
-.. _HTTP Authorization header: http://tools.ietf.org/html/rfc2616#section-14.8
 
 Endpoint
 ********
