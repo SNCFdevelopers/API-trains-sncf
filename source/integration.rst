@@ -43,7 +43,7 @@ The only endpoint of this version of the api is : https://api.sncf.com/v1/covera
 Some easy examples
 ******************
 
-* Transport mode available in the service
+* Transport modes available in the service
 	* https://api.sncf.com/v1/coverage/sncf/commercial_modes
 * Which services are available on this coverage? take a look at the links under this URL
 	* https://api.sncf.com/v1/coverage/sncf
@@ -51,7 +51,7 @@ Some easy examples
 	* https://api.sncf.com/v1/coverage/sncf/networks
 * SNCF network lines?
 	* https://api.sncf.com/v1/coverage/sncf/networks/network:OCE:SN/lines
-* Too much lines, let's use physical mode filtering
+* Too many lines, let's use physical mode filtering
 	* physical modes managed by SNCF
 	* https://api.sncf.com/v1/coverage/sncf/networks/network:OCE:SN/physical_modes
 	* Train lines
@@ -445,7 +445,7 @@ https://api.sncf.com/v1/coverage/sncf/stop_areas/stop_area:OCE:SA:87271007/place
 Journeys
 ********
 
-This api compute journeys.
+This api commutes journeys.
 
 It will retrieve the next journeys from
 the selected public transport object.
@@ -455,7 +455,7 @@ To access the 'journey' api endpoint: `<https://api.sncf.com/v1/journeys?from={r
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | *Note*                                                                                                                                                      |
 |                                                                                                                                                             |
-| The SNCF API handle journey computation from and to "station" or "administrative region"                                                                    |
+| The SNCF API handles journey computation from and to "station" or "administrative region"                                                                    |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -541,7 +541,7 @@ sections            array `section`_    All the sections of the journey
 from                `place <place>`_    The place from where the journey starts
 to                  `<place>`_          The place from where the journey ends
 links               `link`_             Links related to this journey
-type                *enum* string       Used to qualified a journey. See the `journey_qualif`_ section for more information
+type                *enum* string       Used to qualify a journey. See the `journey_qualif`_ section for more information
 fare                fare_               Fare of the journey (tickets and price)
 tags                array of string     List of tags on the journey. The tags add additional information on the journey beside the journey type. See for example `multiple_journeys`_.
 =================== ================== ===========================================================================
@@ -607,7 +607,7 @@ tags                array of string     List of tags on the journey. The tags ad
 Route Schedules
 ***************
 
-This api give you access to schedules of routes.
+This api gives you access to schedules of routes.
 The response is made of an array of route_schedule, and another one of `note`_.
 You can access it via that kind of url: `<https://api.sncf.com/v1/{a_path_to_a_resource}/route_schedules>`_
 
@@ -686,7 +686,7 @@ Rows    Array of row_     A row of the schedule
 Stop Schedules
 **************
 
-This api give you access to schedules of stops.
+This api gives you access to schedules of stops.
 The response is made of an array of stop_schedule, and another one of `note`_.
 You can access it via that kind of url: `<https://api.sncf.com/v1/{a_path_to_a_resource}/stop_schedules>`_
 
@@ -722,7 +722,7 @@ Departures
 **********
 
 This api retrieves a list of departures from a datetime of a selected object.
-Departures are ordered chronologically in growing order.
+Departures are ordered chronologically in ascending order.
 
 Parameters
 ##########
@@ -753,8 +753,8 @@ stop_point            stop_point_               The stop point of the schedule
 
 Arrivals
 ********
-This api retrieves a list of arrival from a datetime of a selected object.
-Arrival are ordered chronologically in growing order.
+This api retrieves a list of arrivals from a datetime of a selected object.
+Arrivals are ordered chronologically in ascending order.
 
 Parameters
 ##########
@@ -779,7 +779,7 @@ Objects
 Field                 Type                      Description
 ===================== ========================= ========================================
 route                 route_                    The route of the schedule
-stop_date_time        Array of stop_date_time_  When does a bus stops at the stop point
+stop_date_time        Array of stop_date_time_  When does a bus stop at the stop point
 stop_point            stop_point_               The stop point of the schedule
 ===================== ========================= ========================================
 
@@ -1086,7 +1086,7 @@ Navitia can compute several kind of trips within a journey query.
 The `RAPTOR <http://research.microsoft.com/apps/pubs/default.aspx?id=156567>`_ algorithm used in Navitia is a multi-objective algorithm. Thus it might return multiple journeys if it cannot know that one is better than the other. 
 For example it cannot decide that a one hour trip with no connection is better than a 45 minutes trip with one connection (it is called the `pareto front <http://en.wikipedia.org/wiki/Pareto_efficiency>`_).
 
-If the user ask for more journeys than the number of journeys given by RAPTOR (with the parameter ``min_nb_journeys`` or ``count``), Navitia will ask RAPTOR again, 
+If the user asks for more journeys than the number of journeys given by RAPTOR (with the parameter ``min_nb_journeys`` or ``count``), Navitia will ask RAPTOR again, 
 but for the following journeys (or the previous ones if the user asked with ``datetime_represents=arrival``).
 
 Those journeys have the ``next`` (or ``previous``) value in their tags.
@@ -1122,11 +1122,11 @@ Quota
 The SNCF API has a rate limit according to the plan you registered for. For a developer plan (free), the rate limit is defined for a total calls of 3000 per day (per user).
 For a entreprise plan, the rate limit can be made to measure according to your need.
 As you reach your rate limit, your access to the service is limited on the remaining time.
-Example : a re-user has made 3000 calls in 12 hours. The service will be freeze for the next 12 hours.
+Example : a re-user has made 3000 calls in 12 hours. The service will freeze for the next 12 hours.
 
-Connection between Paris’ train station
-=======================================
-The connection between train station within Paris are based on approximate duration journey.
+Connection between Paris’ train stations
+========================================
+The connection between train stations within Paris are based on approximative journey durations.
 See the table below:
 
 +-------------------+--------------+--------------------+-------------------+-------------------+---------------+---------------+---------------+
