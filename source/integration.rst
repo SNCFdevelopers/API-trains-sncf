@@ -445,7 +445,7 @@ https://api.sncf.com/v1/coverage/sncf/stop_areas/stop_area:OCE:SA:87271007/place
 Journeys
 ********
 
-This api commutes journeys.
+This api computes journeys.
 
 It will retrieve the next journeys from
 the selected public transport object.
