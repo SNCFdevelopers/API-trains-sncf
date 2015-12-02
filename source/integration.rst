@@ -28,9 +28,9 @@ You must authenticate to use **SNCF API**. When you register we give you an auth
 
 You must use the `Basic HTTP authentication`_, where the username is the key, and without password.
 
-Username : copy / paste your key
+Username: copy / paste your key
 
-Password : leave the field blank
+Password: leave the field blank
 
 
 .. _Basic HTTP authentication: http://tools.ietf.org/html/rfc2617#section-2
