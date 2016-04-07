@@ -1,5 +1,7 @@
 SNCF API documentation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+API SNCF is based on navitia.io software, to see last update, please go to navitia.io documentation (http://doc.navitia.io/)
+
 .. contents:: Index
 
 Overview
