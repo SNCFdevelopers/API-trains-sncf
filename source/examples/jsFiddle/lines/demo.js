@@ -1,5 +1,5 @@
 // Url to retrieve lines available on the coverage
-var linesUrl = 'http://vip-jormsim-ws.mutu.prod.canaltp.fr/v1/coverage/sandbox-sncf/lines';
+var linesUrl = 'http://navitia2sim-ws.mutu.production.canaltp.fr/v1/coverage/sandbox-sncf/lines';
 
 // Call SNCF API
 $.ajax({
