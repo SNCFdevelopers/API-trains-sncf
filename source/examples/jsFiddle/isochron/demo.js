@@ -1,7 +1,7 @@
 var sandboxToken = '49545ca6-b27c-4a29-a179-6f2fb5d33819';
 
 // Isochron starting point
-var from = 'stop_area:SNF:SA:PARISMONT';
+var from = 'stop_area:SNF:SA:MANS';
 
 // Limit isochron duration (required, or may trigger timeout when there is more data)
 var maxDuration = 3600 * 6;
@@ -38,12 +38,12 @@ var tiles = {
 
 // Create a drawable map using Leaflet
 var map = L.map('map')
-    .setView([48.846905, 2.377097], 7)
+    .setView([48.007778, 0.199533], 7)
     .addLayer(new L.TileLayer(tiles.url, {minZoom: 0, maxZoom: 16, attribution: tiles.attrib}))
 ;
 
 // Add marker to show isochron starting point
-L.marker([48.846905, 2.377097]).addTo(map);
+L.marker([48.007778, 0.199533]).addTo(map);
 
 var geojsonLayer = null;
 
