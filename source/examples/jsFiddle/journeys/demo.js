@@ -2,13 +2,13 @@
  * This exemple display an example of journey from Paris Gare de Lyon to Cannes.
  */
 
-var sandboxToken = 'sandbox-token';
-var from = '2.3749036;48.8467927';              // here using lon and lat,
-var to = 'stop_point:OCE:SP:TrainTER-87757625'; // or using an id.
+var sandboxToken = 'e8581787-4ac0-492d-b21e-8dfed0db59ff';
+var from = 'stop_area:SNF:SA:PARISMONT';
+var to = 'stop_area:SNF:SA:NANTES';
 
 $.ajax({
   type: 'GET',
-  url: 'https://api.sncf.com/v1/coverage/sandbox-sncf/journeys?from='+from+'&to='+to,
+  url: 'http://navitia2sim-ws.mutu.production.canaltp.fr/v1/coverage/sandbox/journeys?from='+from+'&to='+to,
   dataType: 'json',
   headers: {
     Authorization: 'Basic ' + btoa(sandboxToken)
