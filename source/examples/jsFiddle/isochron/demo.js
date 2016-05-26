@@ -1,13 +1,13 @@
-var sandboxToken = 'sandbox-token';
+var sandboxToken = '49545ca6-b27c-4a29-a179-6f2fb5d33819';
 
 // Isochron starting point
-var from = [48.846905, 2.377097];
+var from = 'stop_area:SNF:SA:PARISMONT';
 
 // Limit isochron duration (required, or may trigger timeout when there is more data)
 var maxDuration = 3600 * 6;
 
 // Query for this isochron
-var isochronUrl = 'https://api.sncf.com/v1/coverage/sandbox-sncf/journeys?from='+from[1]+';'+from[0]+'&max_duration='+maxDuration;
+var isochronUrl = 'http://navitia2sim-ws.mutu.production.canaltp.fr/v1/coverage/sandbox/journeys?from='+from+'&max_duration='+maxDuration;
 
 // Call SNCF api
 $.ajax({
@@ -38,12 +38,12 @@ var tiles = {
 
 // Create a drawable map using Leaflet
 var map = L.map('map')
-    .setView(from, 7)
+    .setView([48.846905, 2.377097], 7)
     .addLayer(new L.TileLayer(tiles.url, {minZoom: 0, maxZoom: 16, attribution: tiles.attrib}))
 ;
 
 // Add marker to show isochron starting point
-L.marker(from).addTo(map);
+L.marker([48.846905, 2.377097]).addTo(map);
 
 var geojsonLayer = null;
 
