@@ -367,6 +367,26 @@ Response example for : https://api.sncf.com/v1/coverage/sncf/places?q=gare
      ],
     }
 
+Isochrones
+*************
+
+Whether using a specific set of coordinates or a general location, you can find places within your reach
+and their corresponding travel times, using a variety of transportation options. You can even specify
+the maximum amount of time you want to spare on travel and find the quickest way to reach your destination.
+The Isochrone function provides information in the form of a table with all the possible stops from a potential destination
+with their respective arrival times, travel times and number of matches.
+
+You have to use these APIs (click on them for details):
+
+- `places`_ : autocomplete on geographical data to find the departure and destination points from an input text.
+- `journeys`_ : Compute journeys
+
+Example
+########
+
+`Code it yourself on JsFiddle <http://jsfiddle.net/gh/get/jquery/2.2.2/SNCFdevelopers/API-trains-sncf/tree/source/examples/jsFiddle/isochron/>`_
+
+
 Places Nearby
 *************
 
@@ -443,7 +463,7 @@ https://api.sncf.com/v1/coverage/sncf/stop_areas/stop_area:OCE:SA:87271007/place
         ....
     }
 
-
+.. _journeys:
 Journeys
 ********
 
@@ -462,6 +482,11 @@ To access the 'journey' api endpoint: `<https://api.sncf.com/v1/journeys?from={r
 
 
 .. _journeys_parameters:
+
+Example
+########
+
+`Code it yourself on JsFiddle <http://jsfiddle.net/gh/get/jquery/2.2.2/SNCFdevelopers/API-trains-sncf/tree/source/examples/jsFiddle/journeys/>`_
 
 Parameters
 ##########
@@ -837,6 +862,12 @@ commercial_mode `commercial_mode`_     Commercial mode of the line
 | The fields "Code" and "Color" in this API are not available.                                              |
 | The lines you will get with API do not correspond to commercial lines.                                    |
 +-----------------------------------------------------------------------------------------------------------+
+
+Example
+########
+
+`Code it yourself on JsFiddle <http://jsfiddle.net/gh/get/jquery/2.2.2/SNCFdevelopers/API-trains-sncf/tree/source/examples/jsFiddle/lines/>`_
+
 
 .. _route:
 
