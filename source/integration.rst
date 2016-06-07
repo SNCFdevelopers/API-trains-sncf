@@ -198,6 +198,17 @@ That means you will find inside the same stream ( *"internal": true* ) a "disrup
 ( *"rel": "disruptions"* ) containing some disruptions objects ( *"type": "disruption"* ) 
 where you can find the details of your object ( *"id": "edc46f3a-ad3d-11e4-a5e1-005056a44da2"* ).
 
+Librairies
+======
+
+========================== ==============================================================================
+Language / Framework       Link
+========================== ==============================================================================
+PHP                        `Navitia Component <https://github.com/CanalTP/NavitiaComponent>`_
+Symfony "2.*" "3.*"        `Navitia Bundle <https://github.com/CanalTP/NavitiaBundle>`_
+========================== ==============================================================================
+
+
 Errors
 ======
 
