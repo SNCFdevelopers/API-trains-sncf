@@ -1152,10 +1152,10 @@ non_pt_bss            A trip without public transport, only bike sharing
 
 Quota
 ========
-The SNCF API has a rate limit according to the plan you registered for. For a developer plan (free), the rate limit is defined for a total calls of 3000 per day (per user).
+The SNCF API has a rate limit according to the plan you registered for. For a developer plan (free), the rate limit is defined for a total calls of 5000 per day (per user).
 For a entreprise plan, the rate limit can be made to measure according to your need.
 As you reach your rate limit, your access to the service is limited on the remaining time.
-Example : a re-user has made 3000 calls in 12 hours. The service will freeze for the next 12 hours.
+Example : a re-user has made 5000 calls in 12 hours. The service will freeze for the next 12 hours.
 
 Connection between Paris’ train stations
 ========================================
