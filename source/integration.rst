@@ -205,7 +205,7 @@ Librairies
 Language / Framework       Link
 ========================== ==============================================================================
 PHP                        `Navitia Component <https://github.com/CanalTP/NavitiaComponent>`_
-Symfony "2.*" "3.*"        `Navitia Bundle <https://github.com/CanalTP/NavitiaBundle>`_
+Symfony 2 or 3             `Navitia Bundle <https://github.com/CanalTP/NavitiaBundle>`_
 ========================== ==============================================================================
 
 
