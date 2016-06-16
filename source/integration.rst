@@ -52,6 +52,7 @@ If you need more information describing how to use SNCF API, please refer to the
 The Navitia documentation describes the Navitia API. All the examples that it contains refer to this API. Since it is based on the same technology, do not forget to change the first part of the URL in order to call the right API.
 
 Here is an example :
+
 ======================================== ===========================================
 If the documentation shows this request       try this one !
 ======================================== ===========================================
