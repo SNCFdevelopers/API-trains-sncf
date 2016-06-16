@@ -6,7 +6,7 @@ SNCF API documentation
 OVERVIEW
 ========
 
-This documentation describes how to use the SNCF API based on navitia software. Navitia is an Open Source software developed by `Kisio Digital <http://www.kisio.org/>`_. To see the last update, please go to navitia.io documentation (`http://doc.navitia.io/ <http://doc.navitia.io/>`_).
+This documentation describes how to use the SNCF API based on Navitia software. Navitia is an Open Source software developed by `Kisio Digital <http://www.kisio.org/>`_. To see the last update, please go to navitia.io documentation (`http://doc.navitia.io/ <http://doc.navitia.io/>`_).
 
 The SNCF API contains **theoretical train data** for the following commercial modes: TGV, TER, Transilien, Intercités. The SNCF API also contains **realtime train data** for the following commercial modes: TGV, TER, Intercités.
 
@@ -44,7 +44,7 @@ Easy **executable examples** are available on JSFiddle
 
 MORE DETAILS AND EXAMPLES
 =========================
-If you need more information describing how to use SNCF API, please refer to the navitia API documentation (`http://doc.navitia.io/ <http://doc.navitia.io/>`_). It contains many example, libraries and tools that will help you build your project using the API.
+If you need more information describing how to use SNCF API, please refer to the Navitia API documentation (`http://doc.navitia.io/ <http://doc.navitia.io/>`_). It contains many example, libraries and tools that will help you build your project using the API.
 
 `VIEW THE FULL NAVITIA DOCUMENTATION <http://doc.navitia.io/>`_
 
