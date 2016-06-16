@@ -34,11 +34,11 @@ EASY EXAMPLES
 =============
 Easy **executable examples** are available on JSFiddle
 
-`Try JOURNEYS feature on JSFiddle <http://jsfiddle.net/gh/get/jquery/2.2.2/SNCFdevelopers/API-trains-sncf/tree/source/examples/jsFiddle/journeys/>`_
+* `Try JOURNEYS feature on JSFiddle <http://jsfiddle.net/gh/get/jquery/2.2.2/SNCFdevelopers/API-trains-sncf/tree/source/examples/jsFiddle/journeys/>`_
 
-`Try ISOCHRONES feature on JSFiddle <http://jsfiddle.net/gh/get/jquery/2.2.2/SNCFdevelopers/API-trains-sncf/tree/source/examples/jsFiddle/isochron/>`_
+* `Try ISOCHRONES feature on JSFiddle <http://jsfiddle.net/gh/get/jquery/2.2.2/SNCFdevelopers/API-trains-sncf/tree/source/examples/jsFiddle/isochron/>`_
 
-`Try LINES feature on JSFiddle <http://jsfiddle.net/gh/get/jquery/2.2.2/SNCFdevelopers/API-trains-sncf/tree/source/examples/jsFiddle/lines/>`_
+* `Try LINES feature on JSFiddle <http://jsfiddle.net/gh/get/jquery/2.2.2/SNCFdevelopers/API-trains-sncf/tree/source/examples/jsFiddle/lines/>`_
 
 .. _more_detail_and_examples:
 
