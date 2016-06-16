@@ -1,17 +1,14 @@
 SNCF API documentation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The SNCF API is based on navitia.io software. To see the last update, please go to navitia.io documentation (http://doc.navitia.io/)
 
 .. contents:: Index
 
 OVERVIEW
 ========
 
-This documentation describes how to use the SNCF API based on navitia via the v1 interface, and the returned resources. Navitia is an Open Source software developed by Kisio Digital (hyperlink to http://www.kisio.org/).
+This documentation describes how to use the SNCF API based on navitia software. Navitia is an Open Source software developed by Kisio Digital (hyperlink to http://www.kisio.org/). To see the last update, please go to navitia.io documentation (http://doc.navitia.io/)
 
-The SNCF API contains theoretical train data for the following commercial modes : TGV, TER, Transilien, Intercités. The SNCF API also contains realtime train date for the following commercial modes : TGV, TER, Intercités.
-
-Read our lexicon : https://github.com/OpenTransport/vocabulary/blob/master/vocabulary.md
+The SNCF API contains **theoretical train data** for the following commercial modes: TGV, TER, Transilien, Intercités. The SNCF API also contains **realtime train data** for the following commercial modes: TGV, TER, Intercités.
 
 The SNCF API handles:
 * Journeys computation
@@ -20,6 +17,8 @@ The SNCF API handles:
 * Exploration of public transport data / search places
 * Autocomplete
 * Isochrones
+
+Read the **Open Transport vocabulary** (https://github.com/OpenTransport/vocabulary/blob/master/vocabulary.md).
 
 .. _authentification:
 
@@ -33,7 +32,7 @@ You must authenticate to use SNCF API. When you register we give you an authenti
 
 EASY EXAMPLES
 =============
-Easy executable examples are available on JSFiddle
+Easy **executable examples** are available on JSFiddle
 
 `Try JOURNEYS feature on JSFiddle <http://jsfiddle.net/gh/get/jquery/2.2.2/SNCFdevelopers/API-trains-sncf/tree/source/examples/jsFiddle/journeys/>`_
 
@@ -49,9 +48,10 @@ If you need more information describing how to use SNCF API, please refer to the
 
 `VIEW THE FULL NAVITIA DOCUMENTATION <http://doc.navitia.io/>`_
 
-Important note : The Navitia documentation describes the Navitia API. All the examples that it contains refer to this API. Since it is based on the same technology, do not forget to change the first part of the URL in order to call the right API
-Here is an example :
+**Important note**
+The Navitia documentation describes the Navitia API. All the examples that it contains refer to this API. Since it is based on the same technology, do not forget to change the first part of the URL in order to call the right API.
 
+Here is an example :
 ======================================== ===========================================
 If the documentation shows this request       try this one !
 ======================================== ===========================================
